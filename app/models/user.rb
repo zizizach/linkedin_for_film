@@ -4,6 +4,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :confirmable
   has_one :profile
-  has_one :experience
+  has_many :experience
   accepts_nested_attributes_for :experience
 end

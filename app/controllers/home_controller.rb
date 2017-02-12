@@ -3,5 +3,6 @@ class HomeController < ApplicationController
     
     def index
         @email = current_user.email
+        @first_name = current_user.profile.first_name
     end
 end
